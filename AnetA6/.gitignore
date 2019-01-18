@@ -1,0 +1,6 @@
+# exclude all
+*
+# include only
+!.gitignore
+!Configuration.h
+!Configuration_adv.h

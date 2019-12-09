@@ -325,9 +325,10 @@
 //#define PSU_NAME "Power Supply"
 
 #if ENABLED(PSU_CONTROL)
-  #define PSU_ACTIVE_HIGH false // Set 'false' for ATX (1), 'true' for X-Box (2)
+  #define PSU_ACTIVE_HIGH false     // Set 'false' for ATX, 'true' for X-Box
 
-  //#define PS_DEFAULT_OFF      // Keep power off until enabled directly with M80
+  //#define PSU_DEFAULT_OFF         // Keep power off until enabled directly with M80
+  //#define PSU_POWERUP_DELAY 100   // (ms) Delay for the PSU to warm up to full power
 
   //#define AUTO_POWER_CONTROL  // Enable automatic control of the PS_ON pin
   #if ENABLED(AUTO_POWER_CONTROL)
@@ -1554,7 +1555,7 @@
 
 // Preheat Constants
 #define PREHEAT_1_LABEL       "PLA"
-#define PREHEAT_1_TEMP_HOTEND 200
+#define PREHEAT_1_TEMP_HOTEND 215
 #define PREHEAT_1_TEMP_BED     60
 #define PREHEAT_1_FAN_SPEED     0 // ANET A6 Default is 255
 
@@ -2147,10 +2148,10 @@
 //#define MALYAN_LCD
 
 //
-// LulzBot Color Touch UI for FTDI EVE (FT800/FT810) displays
+// Touch UI for FTDI EVE (FT800/FT810) displays
 // See Configuration_adv.h for all configuration options.
 //
-//#define LULZBOT_TOUCH_UI
+//#define TOUCH_UI_FTDI_EVE
 
 //
 // Third-party or vendor-customized controller interfaces.

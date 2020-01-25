@@ -747,8 +747,7 @@
 
 // ANET A6 Firmwae V2.0 defaults: (steps/mm)
 // Xsteps/mm: +100.0, Ysteps/mm: +100.0, Zsteps/mm: +0400.0, eSteps/mm: +0095.0
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 100,  100, 400, 100 }
-//#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80,  80, 400, 95 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 100,  100, 400, 101.4 }
 
 /**
  * Default Max Feed Rate (mm/s)

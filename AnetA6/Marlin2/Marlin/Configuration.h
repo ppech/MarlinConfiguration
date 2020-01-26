@@ -134,7 +134,7 @@
 #endif
 
 // Name displayed in the LCD "Ready" message and Info menu
-#define CUSTOM_MACHINE_NAME "AnetA6 v200125"
+#define CUSTOM_MACHINE_NAME "AnetA6 v200126"
 
 // Printer's unique ID, used by some programs to differentiate between machines.
 // Choose your own or use a service like http://www.uuidgenerator.net/version4
@@ -1126,51 +1126,16 @@
 // @section machine
 
 // The size of the print bed
-//#define X_BED_SIZE 200
-//#define Y_BED_SIZE 200
-
-// Travel limits (mm) after homing, corresponding to endstop positions.
-//#define X_MIN_POS 0
-//#define Y_MIN_POS 0
-//#define X_MAX_POS X_BED_SIZE
-//#define Y_MAX_POS Y_BED_SIZE
-//#define Z_MIN_POS 0
-//#define Z_MAX_POS 200
-
-// ANET A6 Firmware V2.0 defaults:
-//#define X_BED_SIZE 220
-//#define Y_BED_SIZE 220
-//#define X_MIN_POS 0
-//#define Y_MIN_POS 0
-//#define Z_MIN_POS 0
-//#define Z_MAX_POS 250
-
-// ANET A6, X0/Y0 0 front left bed edge :
 #define X_BED_SIZE 217
 #define Y_BED_SIZE 212
-#define X_MIN_POS 5
+
+// Travel limits (mm) after homing, corresponding to endstop positions.
+#define X_MIN_POS 7
 #define Y_MIN_POS -8
-#define Z_MIN_POS 0
-#define Z_MAX_POS 170
-
-// ANET A6 with new X-Axis / modded Y-Axis:
-//#define X_BED_SIZE 235
-//#define Y_BED_SIZE 230
-//#define X_MIN_POS 0
-//#define Y_MIN_POS 0
-//#define Z_MIN_POS 0
-//#define Z_MAX_POS 230
-
-// ANET A6 with new X-Axis / modded Y-Axis, X0/Y0 0 front left bed edge :
-//#define X_BED_SIZE 227
-//#define Y_BED_SIZE 224
-//#define X_MIN_POS -8
-//#define Y_MIN_POS -6
-//#define Z_MIN_POS 0
-//#define Z_MAX_POS 230
-
 #define X_MAX_POS 225
 #define Y_MAX_POS 218
+#define Z_MIN_POS 0
+#define Z_MAX_POS 200
 
 /**
  * Software Endstops
@@ -1198,7 +1163,7 @@
 #endif
 
 #if EITHER(MIN_SOFTWARE_ENDSTOPS, MAX_SOFTWARE_ENDSTOPS)
-  #define SOFT_ENDSTOPS_MENU_ITEM  // Enable/Disable software endstops from the LCD
+  //#define SOFT_ENDSTOPS_MENU_ITEM  // Enable/Disable software endstops from the LCD
 #endif
 
 /**
